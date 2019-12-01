@@ -60,13 +60,16 @@ $('#loader-wrapper .load_title').remove();
 	console.log(niu)
 	var url = encodeURIComponent(location.href.split('#')[0])
 console.log(url)
-console.log(signUrl)
+
 var signUrl = window.location.href.split('#')[0]; 
+console.log(signUrl)
 $.ajax({ url: "http://47.106.128.238:8080/config?"+url, type: "post",
 data: { signUrl: signUrl }, 
-success: function (data) { console.log("wx.config() ---> 接收后台返回的参数");
+success: function (data) { 
+	console.log("wx.config() ---> 接收后台返回的参数");
+	console.log(data)
 wx.config({ 
-	debug: false, 
+	debug: true,
 	appId: data.appid,
 	timestamp: data.timestamp, 
 	nonceStr: data.nonceStr,
