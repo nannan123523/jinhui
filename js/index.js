@@ -82,17 +82,17 @@ wx.config({
                     'onMenuShareAppMessage'] }),
       wx.ready(function(){
           var shareData = {
-             title: '9.28深铁锦荟广场趣动盛启',
-             desc: '9.28深铁锦荟广场趣动盛启',
+             title: '12.6大仟里活动',
+             desc: '12.6大仟里活动',
               link: location.href,
-            imgUrl: 'http://shentieh5doc.lanfriend.cn/1234.png'
+            imgUrl: 'https://shentiechige-1259704124.cos.ap-guangzhou.myqcloud.com/大仟里.png'
           };
           
          wx.onMenuShareAppMessage(shareData);
          wx.onMenuShareTimeline({
-          title: '9.28深铁锦荟广场趣动盛启', // 分享标题
+          title: '12.6大仟里活动', // 分享标题
           link: location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-          imgUrl:'http://shentieh5doc.lanfriend.cn/1234.png', // 分享图标
+          imgUrl:'https://shentiechige-1259704124.cos.ap-guangzhou.myqcloud.com/大仟里.png', // 分享图标
  
           success: function () {
             console.log('已分享');
