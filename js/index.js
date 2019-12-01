@@ -69,7 +69,7 @@ success: function (data) {
 	console.log("wx.config() ---> 接收后台返回的参数");
 	console.log(data)
 wx.config({ 
-	debug: true,
+	debug: false,
 	appId: data.appid,
 	timestamp: data.timestamp, 
 	nonceStr: data.nonceStr,
