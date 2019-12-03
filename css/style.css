@@ -1,7 +1,9 @@
 html {
   overflow-y: scroll;
 }
-
+boby{
+	height: 13777px;
+}
 :root {
   overflow-y: auto;
 
@@ -16,7 +18,14 @@ body {
  overflow-x: hidden
 }
 
-
+@keyframes fangda {
+        0%{ 
+            transform: scale(1.0);
+        }50%{
+              transform: scale(1.05);
+}
+100%{ transform: scale(1.0);}
+}
 @-webkit-keyframes spin {
         0%{ 
             -webkit-transform: rotate(0deg); 
@@ -59,8 +68,7 @@ body {
 
 }
 
-
-            
+     
        
             @keyframes fade {
     0% {
@@ -93,7 +101,14 @@ body {
             }
 }
 
-
+		@keyframes left1{
+			 0% {
+              transform:translateX(-300px)
+}
+            100% {
+                transform: translateX(0px);
+            }
+}
             
    @keyframes zuoyou{
 			 0% {
@@ -447,7 +462,11 @@ body {
 50%{-webkit-transform: rotate(30deg);}
    100% {-webkit-transform: rotate(0deg);}
     }
-    
+        @keyframes zhuan{
+       0%{transform: rotateY(0deg);}
+50%{transform: rotateY(360deg);}
+   100% {transform: rotateY(0deg);}
+    }
 .quchu{
 	display: none;
 	
@@ -460,7 +479,12 @@ animation-delay:3s, 4s;
 animation-iteration-count:1, infinite;
 
 }
-
+.left123{
+	position: absolute;
+animation-name:left1, fangda;
+animation-delay:0s, 2s;
+animation-iteration-count:1, infinite;
+}
 .qiqiu124
 {
 position: absolute;
@@ -682,11 +706,17 @@ margin-left: 23%;
 
 
 
-.left1{
-	animation:left 3s 2s 1 ;
+/*.left1{
+	animation:left  3s 2s 1 ;
 	 transform: translateZ(0);
 	 position: absolute
 }
+.right1{
+	animation:right 3s 2s 1 ;
+	 transform: translateZ(0);
+	 position: absolute
+}*/
+       
 .margin1{
 
     margin-top: -1638px;

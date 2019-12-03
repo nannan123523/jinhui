@@ -85,8 +85,11 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+.left2{
+		animation:left  4s 1;
+}
 .left1{
-	animation:left  4s 1;
+	animation:left  2s 1;
 }
 .right {
 	animation-name:right;
@@ -101,15 +104,24 @@ Copyright (c) 2014 Daniel Eden
 }
 .right1 {
 	animation-name:right;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 -webkit-backface-visibility: hidden;
     
 
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+.right11 {
+	animation-name:right;
+  -webkit-animation-duration: 4s;
+          animation-duration:4s;
+-webkit-backface-visibility: hidden;
+    
 
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 .right2{
 	animation-name:right;
   -webkit-animation-duration: 2s;

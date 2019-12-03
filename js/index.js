@@ -1,42 +1,5 @@
 $(function(){
-	var gaogu=screen.width
-console.log(gaogu)
-	if(gaogu<980)
-{
-	$(".yongyuan").addClass('jiashang3')
-		
-}else if(980<gaogu<1400){
-	$(".yongyuan").addClass('jiashang4')
-	}
-	else if(1600>gaogu>1400){
-		$(".yongyuan").addClass('jiashang')
-	}else if(1900>gaogu>1600){
-		$(".yongyuan").addClass('jiashang1')
-	}
 
-			
-		var timer = setInterval(function(){
-doItPerSecond();
-},10)
-   
-var num = 0;
-function doItPerSecond() {
-
-   num++;
-
-   $("#shuzi").html(num+'%')
-   if(num===100){
-   	clearInterval(timer)
-   $('#jia').addClass('loaded');
-
-$('#loader-wrapper .load_title').remove();
-   }
-}
-	function preloader() {
-	
-                
-
-}
 	var niu=$('#bian').attr('src')
 
 	setInterval(function(){
@@ -160,7 +123,7 @@ music_state = 1;
     }
 	})
 
-    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+ if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
         new WOW().init();
     };
 	function addLoadEvent(func) {  
@@ -178,8 +141,7 @@ music_state = 1;
 }  
 addLoadEvent(preloader); 
 
-	
-	
+
 })
 
 
