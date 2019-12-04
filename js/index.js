@@ -97,7 +97,7 @@ wx.config({
     
 		var c = document.getElementById("music");
 		console.log(c)
-    c.src = "http://shentieh5doc.lanfriend.cn/Life%20In%20the%20Fast%20Lane%20-%20Thomas%20Greenberg.mp3";
+    c.src = "https://shentiechige-1259704124.cos.ap-guangzhou.myqcloud.com/%E7%99%BE%E7%9F%B3%E5%85%83%20-%202%E5%8C%B9%E3%81%AE%E5%AD%90%E7%8C%AB.mp3";
     c.play();
 
     document.addEventListener("WeixinJSBridgeReady", function(){
@@ -139,7 +139,7 @@ music_state = 1;
         }  
     }  
 }  
-addLoadEvent(preloader); 
+
 
 
 })
