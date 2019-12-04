@@ -67,8 +67,28 @@ body {
 
 
 }
+   @keyframes right3{
+			 0% {
+              transform:translateX(500px)
+}
+       
+            			 100% {
+              transform:translateX(0px)
+}
 
-     
+
+}
+        @keyframes left3{
+			 0% {
+              transform:translateX(-500px)
+}
+       
+            			 100% {
+              transform:translateX(0px)
+}
+
+
+}
        
             @keyframes fade {
     0% {
@@ -309,9 +329,9 @@ body {
             }
                       @keyframes heiren{
             	 0% {-webkit-transform: rotate(0deg);}
-25%{-webkit-transform: rotate(150deg);}
+25%{-webkit-transform: rotate(130deg);}
     50% {-webkit-transform: rotate(0deg);}
-    75%{-webkit-transform: rotate(150deg);}
+    75%{-webkit-transform: rotate(130deg);}
     100%{-webkit-transform: rotate(0deg);}
             }
                         @keyframes hongyi{
@@ -320,6 +340,16 @@ body {
     50% {-webkit-transform: rotate(0deg);}
     75%{-webkit-transform: rotate(-50deg);}
     100%{-webkit-transform: rotate(0deg);}
+            }
+            .left20{
+            			animation:left3  2s 1 ;
+	 transform: translateZ(0);
+	 position: absolute
+            }
+            .right20{
+            		animation:right3  2s 1 ;
+	 transform: translateZ(0);
+	 position: absolute
             }
             .hongyi{
             	transform-origin: 5% 90%;
